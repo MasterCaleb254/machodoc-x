@@ -18,7 +18,21 @@
     "react-native-camera": "^4.2.1",
     "react-native-audio-record": "^0.3.0",
     "react-native-fs": "^2.20.0",
-    "sqlite-react-native": "^1.0.0"
+    "sqlite-react-native": "^1.0.0",
+    "react-native-sqlite-storage": "^6.0.1",
+    "react-native-quick-sqlite": "^6.0.0",
+    "react-native-aes-crypto": "^2.0.0",
+    "react-native-sensitive-info": "^5.5.8",
+    "crypto-js": "^4.1.1",
+    "@nozbe/watermelondb": "^0.27.0",
+    "@nozbe/with-observables": "^2.0.0",
+    "react-native-vision-camera": "^3.7.1",
+    "react-native-image-picker": "^5.6.0",
+    "react-native-permissions": "^3.8.1",
+    "react-native-image-resizer": "^3.0.0",
+    "opencv-react-native": "^0.0.7",
+    "jpeg-js": "^0.4.4",
+    "react-native-blob-util": "^0.19.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
