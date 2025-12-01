@@ -2,51 +2,63 @@
   "name": "@machodoc/mobile",
   "version": "1.0.0",
   "private": true,
+  "main": "index.js",
+
   "scripts": {
-    "dev": "react-native start",
+    "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "typecheck": "tsc --noEmit"
+    "clean": "rm -rf node_modules && rm -rf package-lock.json && npm install"
   },
+
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.72.0",
+    "react-native": "0.71.19",
+
+    "@tensorflow/tfjs": "^4.15.0",
     "@tensorflow/tfjs-react-native": "^0.8.0",
+
     "@react-native-async-storage/async-storage": "^1.19.0",
+
     "react-native-camera": "^4.2.1",
-    "react-native-audio-record": "^0.3.0",
-    "react-native-fs": "^2.20.0",
-    "sqlite-react-native": "^1.0.0",
-    "react-native-sqlite-storage": "^6.0.1",
-    "react-native-quick-sqlite": "^6.0.0",
-    "react-native-aes-crypto": "^2.0.0",
-    "react-native-sensitive-info": "^5.5.8",
-    "crypto-js": "^4.1.1",
-    "@nozbe/watermelondb": "^0.27.0",
-    "@nozbe/with-observables": "^2.0.0",
     "react-native-vision-camera": "^3.7.1",
     "react-native-image-picker": "^5.6.0",
     "react-native-permissions": "^3.8.1",
     "react-native-image-resizer": "^3.0.0",
-    "opencv-react-native": "^0.0.7",
+
     "jpeg-js": "^0.4.4",
     "react-native-blob-util": "^0.19.4",
-    "react": "18.x.x",
-    "react-native": "0.71.x",
+    "react-native-compressor": "^1.4.4",
+
     "react-native-audio-record": "^0.3.0",
     "react-native-sound": "^0.11.0",
-    "react-native-fs": "^2.20.0",
     "react-native-audio-processing": "^1.0.0",
     "react-native-fft": "^0.2.0",
     "react-native-microphone": "^0.1.0",
+
+    "react-native-fs": "^2.20.0",
+
+    "sqlite-react-native": "^1.0.0",
+    "react-native-sqlite-storage": "^6.0.1",
+    "react-native-quick-sqlite": "^6.0.0",
+
+    "react-native-aes-crypto": "^2.0.0",
+    "react-native-sensitive-info": "^5.5.8",
+    "crypto-js": "^4.1.1",
+
+    "@nozbe/watermelondb": "^0.27.0",
+    "@nozbe/with-observables": "^2.0.0",
+
+    "opencv-react-native": "^0.0.7",
+
     "buffer": "^6.0.3"
   },
+
   "devDependencies": {
-    "@types/react": "^18.2.0",
-    "@types/react-native": "^0.72.0",
-    "typescript": "^5.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0"
+    "@babel/core": "^7.22.20",
+    "@babel/runtime": "^7.22.10",
+    "metro-react-native-babel-preset": "^0.76.8",
+    "react-test-renderer": "18.2.0",
+    "typescript": "^5.3.3"
   }
 }
