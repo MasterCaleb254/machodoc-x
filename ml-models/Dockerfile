@@ -2,15 +2,13 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
-# Create a placeholder requirements file if not exists
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt || true
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# Expose the port mentioned in docker-compose
+# Expose the API port
 EXPOSE 8000
 
-# Run a simple HTTP server to satisfy health checks and keep container running
-# This is a placeholder. Replace with your actual ML application (e.g. FastAPI/Flask)
-CMD ["python", "-m", "http.server", "8000"]
+# Run the FastAPI application using Uvicorn
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
