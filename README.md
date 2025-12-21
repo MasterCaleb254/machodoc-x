@@ -19,10 +19,10 @@ A comprehensive medical diagnostic system integrating mobile, backend, and machi
 
 ### 1. Install Dependencies
 
-Install all dependencies for the monorepo:
+Install all dependencies for the monorepo (use `--legacy-peer-deps` due to React Native dependency conflicts):
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
 ### 2. Start Infrastructure & ML Service
